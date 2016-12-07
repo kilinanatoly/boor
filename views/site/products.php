@@ -228,7 +228,7 @@ $this->params['breadcrumbs'][] = $cat->name;
                                 echo '<h4>В данной категории продуктов нет</h4>';
                             }
                         }
-						
+
 						if ($cat->text_information){
 							echo '
 								<div class="text_information">
@@ -237,13 +237,12 @@ $this->params['breadcrumbs'][] = $cat->name;
 								';
 						}
                         echo '</div>';
-						
+
                         ?>
 
                     </div>
             </div>
         </div>
-    </div>
 <hr>
 <div class="container main_cons1">
     <div class="row">
