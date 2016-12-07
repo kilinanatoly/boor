@@ -1686,6 +1686,7 @@ label {
     display: block;
     width:135px;
     height: 140px;
+    padding-right:7px;
 }
 .tovar1__item_left_a img{
     max-width: 100%;
