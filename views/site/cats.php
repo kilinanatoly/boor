@@ -69,7 +69,7 @@ $this->params['breadcrumbs'][] = $cat->name;
                                          foreach ($value2->childs as $key3=>$value3) {
                                              $url = $functions->get_url($value3->id);
                                              echo '<li class="menu2__list_3_item">
-                                             <a href="' . $url . '">' . $value3->name . '</a>';
+                                             <a '.($cat->id==$value3->id ? 'class="active"' : '').'href="' . $url . '">' . $value3->name . '</a>';
                                              echo '</li>';
                                          }
                                          echo '</ul>';

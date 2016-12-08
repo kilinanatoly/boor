@@ -1642,8 +1642,94 @@ label {
     vertical-align:top;
     width:72%;
 }
+.filter1-wrap{
+    font-size:16px;
+    margin-bottom:30px;
+}
 .filter1{
     display: none;
+    margin-top:15px;
+}
+.filter-button1{
+    border:3px solid #e72f37 !important;
+    outline:none !important;
+    border-radius: 0 !important;
+    background-color:white !important;
+    margin-right:80px;
+}
+.filter-button2{
+    border:2px solid #e72f37 !important;
+    outline:none !important;
+    border-radius: 0 !important;
+    background-color:white !important;
+}
+.filter-button2.active{
+    background-color:#e72f37 !important;
+    color:white !important;
+}
+.filter-button3{
+    border:2px solid #e72f37 !important;
+    outline:none !important;
+    border-radius: 0 !important;
+    background-color:white !important;
+    margin-left:5px;
+}
+.filter-button3.active{
+    background-color:#e72f37 !important;
+    color:white !important;
+}
+.filter1 .filter_item label.btn{
+    background-color:#e72f37 !important;
+    border:none !important;
+    outline:none !important;
+}
+.filter1 .filter_item label.btn.active{
+    -webkit-box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.47);
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.47);
+}
+.filter1 .filter_item .main_label{
+    display:inline-block;
+    vertical-align:top;
+    width: 200px;
+}
+.filter1 .filter_item{
+    margin-bottom:10px;
+}
+.filter1 .slider-handle{
+    background-color:#e72f37 !important;
+    background-image: none !important;
+}
+.filter1  .min-slider-handle{
+    margin-left:0 !important;
+}
+.filter1 .slider-track{
+    background-image: none !important;
+    background-color:#ccc;
+}
+.filter1  .maxx{
+    position:relative;
+    left:10px;
+}
+.filter1 .filter__submit{
+    position: relative;
+    outline:none !important;
+    border:3px solid #e72f37 !important;
+    border-radius: 0 !important;
+    background-color:white !important;
+    padding-left:30px;
+}
+.filter1 .filter__submit:after{
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 5px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('/images/site_images/funnel.png');
 }
 .tovar1__item{
     width:305px;

@@ -11,16 +11,16 @@
             <div class="main-about2__contacts">
                 <div class="main-about2__contacts_call">
                     Позвонить:
-                    <span>8 (800) 008-80-08</span>
+                    <span>8 (800) 250-02-16</span>
                 </div>
                 <div class="main-about2__contacts_write">
                     Написать:
-                    <span><a href="mailto:asd@mail@mail.ru">info@euroboor-rus.ru</a></span>
+                    <span><a href="mailto:asd@mail@mail.ru">mail@euroboor-rus.ru</a></span>
                 </div>
                 <div class="main-about2__contacts_see">
                     Посетить:
-                    <span>Набережные Челны,
-                    пр. мира, 123</span>
+                    <span>Казань,Набережные Челны,
+                    </span>
                 </div>
             </div>
             <div class="main-about2__menu">

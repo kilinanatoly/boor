@@ -7,10 +7,10 @@ $cats = \app\models\Cats::find()->where('parent_id=0')->all();
         <div class="row">
             <div class="header1__line1">
                 <div class="header1__line1_number">
-                    8 (800) 800-00-00
+                    8 (800) 250-02-16
                 </div>
                 <div class="header1__line1_email">
-                    info@euroboor-rus.ru
+                    mail@euroboor-rus.ru
                 </div>
                 <div class="header1__line1_obrat">
                     <a href="#" data-toggle="modal" data-target="#myModal4" class="perezvon">Заказать обратный звонок</a>

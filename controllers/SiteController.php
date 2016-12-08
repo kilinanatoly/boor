@@ -226,7 +226,7 @@ class SiteController extends Controller
                 $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 20]);
                 $models = $products->offset($pages->offset)
                     ->limit($pages->limit)
-                    ->orderBy('id DESC')
+                    ->orderBy('sort DESC,id DESC')
                     ->all();
 
 

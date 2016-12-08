@@ -67,6 +67,16 @@ if ($product->metadescription) {
                                             $url = $functions->get_url($value3->id);
                                             echo '<li class="menu3__list_3_item">
                                              <a ' . (in_array($value3->id, $parents) ? 'class="active"' : '') . 'href="' . $url . '">' . $value3->name . '</a>';
+                                                if ($value3->childs) {
+                                                    echo '<ul class="menu3__list_3" style="display:' . (in_array($value3->id, $parents) ? 'block' : 'none') . '">';
+                                                    foreach ($value3->childs as $key4 => $value4) {
+                                                        $url = $functions->get_url($value4->id);
+                                                        echo '<li class="menu3__list_3_item">
+                                                 <a ' . (in_array($value4->id, $parents) ? 'class="active"' : '') . 'href="' . $url . '">' . $value4->name . '</a>';
+                                                        echo '</li>';
+                                                    }
+                                                    echo '</ul>';
+                                                }
                                             echo '</li>';
                                         }
                                         echo '</ul>';

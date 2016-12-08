@@ -59,6 +59,16 @@ $this->params['breadcrumbs'][] = $cat->name;
                                                         $url = $functions->get_url($value3->id);
                                                         echo '<li class="menu3__list_3_item">
 				                                    	 <a '.($cat->id==$value3->id ? 'class="active"' : '').' href="' . $url . '">' . $value3->name . '</a>';
+                                                                if ($value3->childs){
+                                                                    echo '<ul class="menu3__list_3" style="display:'.(in_array($value3->id,$cat->parents) ? 'block' : 'none').'">';
+                                                                    foreach ($value3->childs as $key4=>$value4) {
+                                                                        $url = $functions->get_url($value4->id);
+                                                                        echo '<li class="menu3__list_3_item">
+                                                                        <a '.($cat->id==$value4->id ? 'class="active"' : '').' href="' . $url . '">' . $value4->name . '</a>';
+                                                                        echo '</li>';
+                                                                    }
+                                                                    echo '</ul>';
+                                                                }
                                                         echo '</li>';
                                                     }
                                                     echo '</ul>';
@@ -108,10 +118,12 @@ $this->params['breadcrumbs'][] = $cat->name;
                         $view_table = implode('&', $view_table);
 
                         if ($products) {
-                            echo '<div class="filter1">
+                            echo '<div class="filter1-wrap">
                             <p class="show_filter"><a href="#" class="btn btn-default flag filter-button1">Показать фильтр</a><span><a class="btn btn-default filter-button2  ' . ($view_flag == 'table' ? ' active ' : '') . '" href="?' . $view_table . '">Показать списком</a></span> <span><a  class="btn btn-default filter-button3 ' . ($view_flag == 'blocks' ? ' active ' : '') . '" href="? ' . $view_blocks . '">Показать блоками</a></span></p>
+                            <hr>
                             <div class="filter1">
                                ' . $filter . '
+                             <hr>  
                             </div>
                         </div>';
                             if ($view_flag == 'blocks') {
