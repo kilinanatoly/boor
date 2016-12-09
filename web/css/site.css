@@ -2288,3 +2288,8 @@ body>.wrap{
     width:1280px;
     margin:0 auto;
 }
+@media print {
+    .header1__wrap_fluid,.header2__wrap_fluid,.custom-breadcrumbs1,.view-product__left,.main_cons1,.main-about2,.main-footer1{
+        display:none;
+    }
+}
