@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 RewriteEngine on
 AddDefaultCharset UTF-8
 # If a directory or a file exists, use the request directly
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # Otherwise forward the request to index.php
+=======
+RewriteEngine on
+AddDefaultCharset UTF-8
+# If a directory or a file exists, use the request directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Otherwise forward the request to index.php
+>>>>>>> 18010ed7438c4c29cf2fdfe73138e044ae805330
 RewriteRule . index.php

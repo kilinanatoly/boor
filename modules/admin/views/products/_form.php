@@ -37,7 +37,11 @@ use mihaildev\ckeditor\CKEditor;
                     }else{
                         $product_type = \app\models\ProductsTypesForProduct::findOne(['product_id'=>$model->id]);
                     }
+<<<<<<< HEAD
                     $product_types = \app\models\ProductTypes::find()->orderBy(['name'=>SORT_ASC])->all();
+=======
+                    $product_types = \app\models\ProductTypes::find()->orderBy(['id'=>SORT_ASC])->all();
+>>>>>>> 18010ed7438c4c29cf2fdfe73138e044ae805330
                     foreach ($product_types as $key => $value) {
                         $checked='';
                         if ($product_type && $value['id']==$product_type->product_type_id){
